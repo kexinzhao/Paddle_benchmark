@@ -13,8 +13,8 @@ Code: https://github.com/PaddlePaddle/Paddle/pull/9488 (Tensor core is enabled f
 
 
 ## Total time
-The average total inference time with different batch sizes on Nvidia V100 GPU.
-All times are in ms (millisecond) averaged over 1000 iterations
+- The average total inference time with different batch sizes on Nvidia V100 GPU.
+- All times are in ms (millisecond) averaged over 1000 iterations
 
 Vgg16 on cifar10 (image.shape = [3, 32, 32]):
 
