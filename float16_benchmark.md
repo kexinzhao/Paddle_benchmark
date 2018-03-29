@@ -6,10 +6,10 @@ We want to compare the inference benchmark of float16 vs float32 on the "image_c
 For more details about tensor core, please refer to https://devblogs.nvidia.com/programming-tensor-cores-cuda-9/
 
 ## Test environment
-GPU: V100
-CUDNN: 7
-CUDA: 9.0
-Code: https://github.com/PaddlePaddle/Paddle/pull/9488 (Tensor core is enabled for float16 mode)
+- GPU: V100
+- CUDNN: 7
+- CUDA: 9.0
+- Code: https://github.com/PaddlePaddle/Paddle/pull/9488 (Tensor core is enabled for float16 mode)
 
 
 ## Total time
