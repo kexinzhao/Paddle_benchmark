@@ -13,7 +13,7 @@ Code: https://github.com/PaddlePaddle/Paddle/pull/9488
 The average total inference time with different batch sizes on Nvidia V100 GPU.
 All times are in ms (millisecond) averaged over 1000 iterations
 
-Resnet32 on cifar10 (image.shape = [3, 32, 32])
+Resnet32 on cifar10 (image.shape = 3, 32, 32)
 |   |    mb=1 |    mb=2 |    mb=4 |    mb=8 |    mb=32 |   mb=64 |   mb=128 |   mb=256 |   mb=512 |
 |---|--------:|--------:|--------:|---------:|---------:|---------:|---------:|---------:|---------:|
 |CPU| 1.29664 | 2.30658 | 3.84233 | 10.4951  | 20.8305  |  26.2213 |  49.6337 |
