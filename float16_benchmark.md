@@ -19,6 +19,7 @@ For more details about tensor core, please refer to https://devblogs.nvidia.com/
 Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
 Total inference time:
+
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | mb=32 | mb=64  |
 |-------|-----: |-----: |-----: |-----: |------: |------:|-------:|
 |float32| 14.64 | 10.24 | 23.54 | 28.41 | 53.62  | 83.84 | Out of Memory | 
