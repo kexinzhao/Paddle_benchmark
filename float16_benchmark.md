@@ -16,6 +16,7 @@ For more details about tensor core, please refer to https://devblogs.nvidia.com/
 - The average total inference time with different batch sizes on Nvidia V100 GPU.
 - All times are in ms (millisecond) averaged over 1000 iterations tested on a single Nvidia V100 GPU
 
+
 Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
 Total inference time for one batch:
@@ -33,6 +34,10 @@ Total time spent on conv op for one batch:
 |float32| 12.0 | 6.96 | 18.6 | 21.4 | 41.3  | 60.7 |
 |float16| 1.81  | 2.11  | 2.95  | 4.57  | 8.0  | 14.6 |
 |Speedup| 6.63  | 3.30  | 6.31  | 4.68  | 5.16   | 4.16  | 
+
+
+
+
 
 Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
