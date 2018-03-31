@@ -18,7 +18,7 @@ For more details about tensor core, please refer to https://devblogs.nvidia.com/
 
 Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
-Total inference time:
+Total inference time for one batch:
 
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | mb=32 | mb=64  |
 |-------|-----: |-----: |-----: |-----: |------: |------:|-------:|
@@ -26,7 +26,8 @@ Total inference time:
 |float16| 5.02  | 4.85  | 6.90  | 9.68  | 16.07  | 29.10 | 56.23  |
 |Speedup| 2.92  | 2.11  | 3.41  | 2.94  | 3.34   | 2.88  | |
 
-Total time spent on conv op:
+Total time spent on conv op for one batch:
+
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | mb=32 |
 |-------|-----: |-----: |-----: |-----: |------: |------:|
 |float32| 12.0 | 6.96 | 18.6 | 21.4 | 41.3  | 60.7 |
@@ -35,14 +36,16 @@ Total time spent on conv op:
 
 Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
-Total inference time:
+Total inference time for one batch:
+
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | mb=32 | mb=64  | mb=128  |
 |-------|-----: |-----: |-----: |-----: |------: |------:|-------:|-------:|
 |float32| 9.34 | 9.59 | 11.10 | 14.46 | 22.89  | 39.9 |  69.31   | Out of Memory | 
 |float16| 8.97  | 8.55  | 9.14  | 8.90  | 12.13  | 18.74 | 31.92  |  59.47       |
 |Speedup| 1.04  | 1.12  | 1.22  | 1.63  | 1.89   | 2.13  |  2.17  | |
 
-Total time spent on conv op:
+Total time spent on conv op for one batch:
+
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | mb=32 | mb=64  | 
 |-------|-----: |-----: |-----: |-----: |------: |------:|-------:|
 |float32| 5.8  | 5.54  | 6.59  | 8.45  | 13.87  | 24.5 |  41.1   | 
@@ -54,6 +57,8 @@ Total time spent on conv op:
 
 Vgg16 on cifar10 (image.shape = [3, 32, 32]):
 
+Total inference time for one batch:
+
 |       | mb=1 | mb=2 | mb=4 | mb=8 | mb=32 | mb=64 | mb=128 | mb=256 | mb=512 |
 |-------|-----:|-----:|-----:|-----:|------:|------:|-------:|-------:|-------:| 
 |float32| 3.94 | 4.10 | 4.08 | 4.48 | 6.90  | 9.03  | 14.04  | 24.63  | 45.36  | 
@@ -62,6 +67,8 @@ Vgg16 on cifar10 (image.shape = [3, 32, 32]):
 
 
 Resnet32 on cifar10 (image.shape = [3, 32, 32]):
+
+Total inference time for one batch:
 
 |       | mb=1 | mb=2 | mb=4 | mb=8 | mb=32 | mb=64 | mb=128 | mb=256 | mb=512 |
 |-------|-----:|-----:|-----:|-----:|------:|------:|-------:|-------:|-------:| 
