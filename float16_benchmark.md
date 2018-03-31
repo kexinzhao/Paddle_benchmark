@@ -15,7 +15,10 @@ For more details about tensor core, please refer to https://devblogs.nvidia.com/
 ## Total time
 - The average total inference time with different batch sizes on Nvidia V100 GPU.
 - All times are in ms (millisecond) averaged over 1000 iterations tested on a single Nvidia V100 GPU
-
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
 Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
