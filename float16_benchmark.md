@@ -14,7 +14,6 @@ For more details about tensor core, please refer to https://devblogs.nvidia.com/
 
 ## Total time
 All times are in ms (millisecond) averaged over 1000 iterations tested on a single Nvidia V100 GPU with respective to different mini-batch(mb) sizes.
-<br><br>
 
 ### Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
@@ -35,9 +34,6 @@ Total time spent on conv op for one batch:
 |Speedup| 6.63  | 3.30  | 6.31  | 4.68  | 5.16   | 4.16  | 
 
 
-
-<br><br>
-
 ### Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
 Total inference time for one batch:
@@ -57,7 +53,6 @@ Total time spent on conv op for one batch:
 |Speedup| 1.29 | 1.19  | 1.56  | 1.98  | 2.45   | 2.77  |  2.69  |
 
 
-<br><br>
 
 ### Vgg16 on cifar10 (image.shape = [3, 32, 32]):
 
@@ -69,7 +64,7 @@ Total inference time for one batch:
 |float16| 3.78 | 3.68 | 3.76 | 3.79 | 4.14  | 4.64  | 6.45   | 10.29  | 17.90  |
 |Speedup| 1.04 | 1.12 | 1.09 | 1.18 | 1.67  | 1.95  | 2.18   | 2.39   | 2.53   |
 
-<br><br>
+
 
 ### Resnet32 on cifar10 (image.shape = [3, 32, 32]):
 
