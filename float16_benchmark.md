@@ -38,7 +38,7 @@ Total time spent on conv op for one batch:
 
 <br><br>
 
-Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
+### Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
 
 Total inference time for one batch:
 
@@ -59,7 +59,7 @@ Total time spent on conv op for one batch:
 
 <br><br>
 
-Vgg16 on cifar10 (image.shape = [3, 32, 32]):
+### Vgg16 on cifar10 (image.shape = [3, 32, 32]):
 
 Total inference time for one batch:
 
@@ -71,7 +71,7 @@ Total inference time for one batch:
 
 <br><br>
 
-Resnet32 on cifar10 (image.shape = [3, 32, 32]):
+### Resnet32 on cifar10 (image.shape = [3, 32, 32]):
 
 Total inference time for one batch:
 
