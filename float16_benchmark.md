@@ -1,7 +1,7 @@
 # float16 benchmark
 
 ## Description
-We want to compare the inference benchmark of float16 vs float32 on the "image_classification" example on V100 GPU, where we can enable the tensor core computation for float16 mode, where we have Resnet32 and Vgg16 on cifar10 data set.
+We want to compare the inference benchmark of float16 vs float32 on the "image_classification" example on V100 GPU, where we can enable the tensor core computation for float16 mode, where we have Vgg16 and Resnet 50 on the imagenet data set, and Vgg16 and Resnet32 on the cifar10 data set. For completeness, we also add the inference benchmark on Titan Xp GPU of Vgg16 and Resnet50 on the imagenet data set.
 
 For more details about tensor core, please refer to https://devblogs.nvidia.com/programming-tensor-cores-cuda-9/
 
