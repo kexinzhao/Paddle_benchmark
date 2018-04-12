@@ -92,8 +92,8 @@ Total inference time for one batch:
 
 
 ### Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
-
 Total inference time for one batch:
+
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | 
 |-------|-----: |-----: |-----: |-----: |------: |
 |float32| 8.56  | 8.23 | 9.97 | 14.63    | 24.78   | 
