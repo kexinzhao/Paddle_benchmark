@@ -12,7 +12,7 @@ For more details about tensor core, please refer to https://devblogs.nvidia.com/
 - Code: https://github.com/PaddlePaddle/Paddle/pull/9488 (Tensor core is enabled for float16 mode)
 
 
-## Total time
+## Total time on V100
 All times are in ms (millisecond) averaged over 1000 iterations tested on a single Nvidia V100 GPU with respective to different mini-batch(mb) sizes.
 
 ### Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
@@ -22,8 +22,8 @@ Total inference time for one batch:
 |       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | mb=32 | mb=64  |
 |-------|-----: |-----: |-----: |-----: |------: |------:|-------:|
 |float32| 14.64 | 10.24 | 23.54 | 28.41 | 53.62  | 83.84 | Out of Memory | 
-|float16| 5.02  | 4.85  | 6.90  | 9.68  | 16.07  | 29.10 | 56.23  |
-|Speedup| 2.92  | 2.11  | 3.41  | 2.94  | 3.34   | 2.88  | |
+|float16| 3.94  | 4.62  | 6.21  | 9.39  | 15.82  | 28.54 | 56.23  |
+|Speedup| 3.72  | 2.22  | 3.79  | 3.03  | 3.39   | 2.94  | |
 
 Total time spent on conv op for one batch:
 
@@ -76,3 +76,26 @@ Total inference time for one batch:
 |float16| 5.77 | 5.77 | 5.29 | 5.80 | 5.74  | 5.03  | 5.23   | 7.37   | 11.53  | 
 |Speedup|      |      |      |      |       | 1.15  | 1.55   | 1.75   | 1.93   |
 
+
+
+## Total time on Titan Xp
+All times are in ms (millisecond) averaged over 1000 iterations tested on a single Nvidia Titan Xp GPU with respective to different mini-batch(mb) sizes.
+
+### Vgg16 on imagenet (flowers data set: image.shape = [3, 224, 224]):
+Total inference time for one batch:
+
+|       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | 
+|-------|-----: |-----: |-----: |-----: |------: |
+|float32| 5.79  | 9.02 | 14.75 | 30.87 | 71.33   | 
+|float16| 5.47  | 8.01  | 13.41  | 27.82  | 67.04| 
+|Speedup| 1.06  | 1.13  | 1.10  | 1.11  | 1.06   | 
+
+
+### Resnet50 on imagenet (flowers data set: image.shape = [3, 224, 224]):
+
+Total inference time for one batch:
+|       | mb=1  | mb=2  | mb=4  | mb=8  | mb=16  | 
+|-------|-----: |-----: |-----: |-----: |------: |
+|float32| 8.56  | 8.23 | 9.97 | 14.63    | 24.78   | 
+|float16| 8.50  | 8.18  | 9.89  | 13.90  | 22.98| 
+|Speedup| 1.01  | 1.01  | 1.01  | 1.05  | 1.08   | 
