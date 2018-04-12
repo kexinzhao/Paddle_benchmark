@@ -16,7 +16,7 @@ Test environment II:
 - CUDNN: 5
 - CUDA: 8.0
 
-- Code: https://github.com/PaddlePaddle/Paddle/pull/9488 (Tensor core is enabled for float16 mode)
+Code: https://github.com/PaddlePaddle/Paddle/pull/9488 (Tensor core is enabled for float16 mode)
 
 
 ## Total time on V100
